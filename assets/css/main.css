@@ -1,0 +1,443 @@
+/* ========== Hero Section ========= */
+.hero {
+  background-color: #dbe3de;
+  overflow: hidden;
+}
+.hero-wrapper {
+}
+.hero-content {
+  padding-top: 50px;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__heading {
+  font-size: clamp(2.375rem, 1.2526rem + 3.5915vw, 5.5625rem);
+  margin-top: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.1px;
+  max-width: 17ch;
+}
+.hero__text {
+  font-size: clamp(1.0625rem, 0.9525rem + 0.3521vw, 1.375rem);
+  margin: 1.35em 0 2em;
+  margin: 26px 0 38px;
+  max-width: 40ch;
+}
+
+.hero__image {
+  margin: 0 -30px;
+  padding-top: 74px;
+}
+/* ========== Clients ======= */
+.clients {
+  margin-top: 65px;
+}
+
+.clients__logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  overflow: auto;
+  padding-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.clients__logos li {
+  flex-shrink: 0;
+}
+.clients__logos li:not(:first-child) {
+  margin-left: 30px;
+}
+
+/* =========== Trust ========== */
+.trust {
+  margin-top: 52px;
+  text-align: center;
+}
+.trust h2 {
+}
+.trust h4 {
+  margin-top: 38px;
+  margin-bottom: 0;
+}
+.trust p {
+  line-height: 1.5;
+}
+.trust-image {
+  padding-top: 62px;
+  margin-top: 62px;
+  position: relative;
+  background-color: #f8f8f8;
+}
+.trust-image img {
+  margin-left: -30px;
+  margin-right: 0px;
+}
+.trust-image__title {
+  font-size: 0.9375rem;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 1em 0;
+  bottom: -15px;
+  background-color: white;
+  box-shadow: 0 10px 15px rgba(28, 36, 43, 6%);
+  border-radius: 8px;
+}
+
+/* =========== Works ========= */
+.works {
+  margin-top: 128px;
+  text-align: center;
+}
+.works__subtitle {
+  margin-top: 1em;
+  font-size: 1.125rem;
+}
+.works-cards {
+  margin-top: 66px;
+}
+.works-card {
+  max-width: 315px;
+  margin-top: 54px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.works-card-image {
+  padding: 55px 51px;
+  min-height: 363px;
+  width: 100%;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.works-card__title {
+  font-family: geller-headline, serif;
+  font-size: 1.625rem;
+  margin: 25px 0 25px;
+}
+.works-card p {
+  font-size: 1.125rem;
+  line-height: 1.67;
+}
+/* ========= Neutral ========  */
+.neutral {
+  color: white;
+  text-align: center;
+  background-color: var(--black);
+  margin-top: 124px;
+  padding: 90px 0px;
+  margin-top: 124px;
+}
+.neutral__tagline {
+  font-size: 1.375rem;
+}
+.neutral__text {
+  font-family: geller-headline, serif;
+  font-size: clamp(1.5625rem, 0.7923rem + 2.4648vw, 3.75rem);
+  font-weight: 300;
+  margin: 65px 0;
+}
+
+/* ========== Insurance ====== */
+.insur {
+  margin-top: 130px;
+  text-align: center;
+}
+.insur-cards {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.insur-card {
+  max-width: 315px;
+  margin-top: 62px;
+}
+.insur-card h4 {
+  margin: 20px 0 14px;
+}
+.insur-card p {
+  margin-bottom: 19px;
+}
+.insur-card a {
+  color: #33b564;
+  text-decoration: underline;
+}
+
+/* ========== FAQs ========= */
+.faqs {
+  /* padding: 26px 0 100px; */
+  margin-top: 120px;
+}
+
+.faqs__heading {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.faqs-content {
+  max-width: 730px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.faqs__item {
+  border: 1px solid rgba(112 112 112 / 20%);
+  padding: 30px 0;
+  padding-left: 30px;
+  border-width: 1px 0 0;
+}
+.faqs__item:last-child {
+  border-bottom-width: 1px;
+}
+
+.accordion {
+  font-family: geller-headline, serif;
+  color: var(--black);
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.625rem;
+  font-weight: 500;
+  font-size: clamp(1.125rem, 1.059rem + 0.2113vw, 1.3125rem);
+  transition: 0.4s;
+  position: relative;
+  padding: 0;
+  padding-left: 0;
+}
+.panel {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  margin: 0;
+  margin-top: 16px;
+  font-weight: 400;
+  line-height: 1.5625;
+}
+.accordion::before {
+  content: url(../images/arrow-head-down.svg);
+  color: #777;
+  font-weight: bold;
+  position: absolute;
+  top: -3px;
+  left: -30px;
+}
+.accordion.active::before {
+  content: url(../images/arrow-head-up.svg);
+  position: absolute;
+  right: 0;
+}
+.faqs-image {
+  margin-top: 75px;
+}
+/* ========== Secure ======== */
+.secure {
+  color: white;
+  background-color: var(--black);
+  text-align: center;
+  padding: 90px 0;
+  margin-top: 120px;
+}
+.secure h2 {
+  font-size: 3rem;
+  line-height: 58px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+/* ========== Responsive ========= */
+
+@media (min-width: 768px) {
+  /* ======= Hero =======*/
+  .hero-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 45px;
+  }
+
+  .hero-content {
+    flex-basis: 57%;
+    flex-shrink: 0;
+    padding: 40px 0 80px;
+    padding: 103px 0 137px;
+    max-width: initial;
+  }
+  .hero__heading {
+    line-height: 1.123;
+    margin-top: 0;
+    letter-spacing: -1px;
+  }
+  .hero__text {
+    margin: 24px 0 55px;
+  }
+  .hero__image {
+    flex-basis: 45%;
+    flex-grow: 1;
+    width: 50%;
+    order: 1;
+    align-self: flex-end;
+    margin: 0;
+    padding-top: 0;
+  }
+  .hero__image img {
+    max-width: 624px;
+    max-width: 708px;
+    max-width: 135%;
+    position: relative;
+    right: -30px;
+  }
+
+  /* ========== Clients ======= */
+  .clients {
+    margin-top: 100px;
+  }
+  .clients__logos {
+    justify-content: space-between;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 16px;
+  }
+  .clients__logos img:not(:first-child) {
+    margin-left: 80px;
+  }
+  /* =========== Trust ========== */
+  .trust {
+    margin-top: 44px;
+  }
+  .trust-wrapper {
+    display: flex;
+    margin-right: -48px;
+  }
+  .trust-content {
+    flex-basis: 75%;
+    margin-top: 178px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    text-align: left;
+    gap: 64px 174px;
+  }
+  .trust-content > * {
+    flex-basis: 45%;
+    max-width: 300px;
+  }
+  .trust h2 {
+    line-height: 1.2;
+  }
+  .trust h4 {
+    margin-top: 0;
+  }
+  .trust p {
+    margin-bottom: 0;
+  }
+  .trust-image {
+    order: -1;
+  }
+  .trust-image img {
+    max-width: 375px;
+    margin-left: 0;
+    margin-right: -84px;
+  }
+  .trust-image__title {
+    font-size: 1rem;
+    bottom: -20px;
+    margin-left: 18px;
+    width: max-content;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /*========== Works ======== */
+  .works {
+    margin-top: 148px;
+  }
+  .works__subtitle {
+    font-size: 1.4375rem;
+  }
+  .works-cards {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    margin-top: 76px;
+  }
+  .works-card {
+    margin: 0;
+  }
+  .works-card__title {
+    max-width: 14ch;
+  }
+  /* ========= Neutral ========  */
+  .neutral {
+    padding: 165px 0 142px;
+  }
+  .neutral__tagline {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+  .neutral__text {
+    max-width: 42ch;
+    margin: 75px auto;
+    line-height: 72px;
+  }
+  /* ========== Insurance ====== */
+  .insur {
+    margin-top: 150px;
+  }
+
+  .insur-cards {
+    flex-wrap: nowrap;
+    margin-top: 24px;
+    gap: 40px;
+  }
+  .insur-card h4 {
+    font-size: 1.1875rem;
+  }
+
+  /* ========== FAQs ========= */
+  .faqs {
+    margin-top: 180px;
+  }
+  .faqs-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  .faqs-content {
+    max-width: 636px;
+    margin: 0;
+  }
+  .faqs__heading {
+    text-align: center;
+  }
+  .faqs-image {
+    order: -1;
+    margin-left: -30px;
+    margin-top: 0;
+  }
+  /* ========== Secure ======== */
+  .secure {
+    margin-top: 180px;
+    padding: 118px 0 125px;
+  }
+  .secure-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .secure h2 {
+    margin-bottom: 0;
+  }
+}
