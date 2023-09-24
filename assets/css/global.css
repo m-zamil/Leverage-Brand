@@ -38,7 +38,6 @@ h1 {
   font-size: 2.5rem;
   font-size: clamp(2.375rem, 1.2526rem + 3.5915vw, 5.5625rem);
   line-height: 1.1;
-  color: var(--black);
   font-weight: bold;
   margin: 0;
   letter-spacing: -0.2px;
@@ -89,7 +88,7 @@ select {
 
 .btn {
   font-size: 15px;
-  font-weight: 500;
+  font-weight: 700;
   display: inline-block;
   text-decoration: none;
   line-height: 1;
@@ -100,6 +99,7 @@ select {
   padding: 17px 30px;
   border: 2px solid transparent;
   transition: all 0.25s;
+  min-width: fit-content;
 }
 
 .btn--outline {
@@ -189,8 +189,11 @@ img {
 
 /* || Navbar styles*/
 header {
-  position: sticky;
   top: 0;
+  position: fixed;
+  height: 59px;
+  width: 100%;
+  transition: top 0.3s;
   background-color: white;
   z-index: 1;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.03);
@@ -326,6 +329,9 @@ header {
 .dropdown-list .dropdown-icon {
   margin-right: 12px;
 }
+main {
+  padding-top: 60px;
+}
 
 /* ======== Footer ======== */
 .footer {
@@ -381,13 +387,17 @@ header {
 
 @media (min-width: 768px) {
   .btn {
-    padding: 22px 45px 22px;
+    padding: 18px 40px 19.5px;
     font-size: 1rem;
   }
   .btn--lg {
     width: auto;
   }
+
   /* -- Navigation -- */
+  header {
+    height: 100px;
+  }
   .navbar {
     padding: 40px 0;
     height: 100px;
@@ -402,6 +412,7 @@ header {
   }
   .nav-cta .btn {
     font-size: 15px;
+    padding: 13px 20px 12px;
   }
   .nav-menu .nav__logo--menu {
     display: none;
@@ -410,7 +421,7 @@ header {
     display: none;
   }
   .nav-item {
-    margin: 0 16px;
+    margin: 0 18px;
   }
   .nav-item.nav-cta {
     margin-top: 0;
@@ -448,8 +459,10 @@ header {
     margin-left: 10px;
     position: relative;
     top: -2px;
+    left: -4px;
   }
-  .dropdown:hover .dropdown-list {
+  .dropdown:hover .dropdown-list,
+  .dropdown:focus-visible .dropdown-list {
     display: block;
     opacity: 1;
   }
@@ -476,6 +489,9 @@ header {
   .dropdown-list li {
     margin-left: -10px;
     margin-right: -10px;
+  }
+  main {
+    padding-top: 100px;
   }
 
   /* ======== Footer ======= */

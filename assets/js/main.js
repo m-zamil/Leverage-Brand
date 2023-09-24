@@ -16,11 +16,10 @@ function closeMenu() {
 }
 
 document.addEventListener('click', (event) => {
-    if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
-        closeMenu();
-    }
-  });
-
+  if (!navMenu.contains(event.target) && !hamburger.contains(event.target)) {
+    closeMenu();
+  }
+});
 
 //Accordion Script
 var acc = document.getElementsByClassName('accordion');
@@ -37,3 +36,16 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+const header = document.getElementById('header');
+var prevScrollpos = window.screenY;
+window.onscroll = function () {
+  var currentScrollPos = window.scrollY;
+  if (prevScrollpos > currentScrollPos) {
+    header.style.top = '0';
+  } else {
+    header.style.top = '-100%';
+  }
+  prevScrollpos = currentScrollPos;
+};

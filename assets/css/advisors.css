@@ -1,0 +1,67 @@
+.hero {
+  color: white;
+  background-color: var(--black);
+}
+
+.hero__heading {
+  max-width: 16ch;
+}
+.hero__image {
+  margin: 0 15px;
+}
+
+.trust {
+  text-align: left;
+}
+.works {
+  margin-top: 90px;
+}
+.works-card-image {
+  background-color: #dbe3de;
+}
+.insur {
+  margin-top: 76px;
+}
+@media (min-width: 768px) {
+  .hero__text {
+    max-width: 50ch;
+  }
+  .trust {
+    margin-top: 110px;
+  }
+  .trust h2 {
+    text-align: center;
+  }
+  .trust-image {
+    margin-top: 78px;
+    padding-top: 40px;
+  }
+  .trust-image img {
+    margin-right: 40px;
+    margin-left: -40px;
+    max-width: 300px;
+  }
+  .trust-content {
+    margin-top: 92px;
+  }
+  .trust-content > * {
+    max-width: 30ch;
+  }
+  .works {
+    margin-top: 36px;
+  }
+  .works-card__title {
+    max-width: 16ch;
+  }
+  .insur__subtitle {
+    max-width: 58ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .insur-cards {
+    margin: 24px -30px 0;
+  }
+  .faqs-image {
+    margin-top: 16px;
+  }
+}

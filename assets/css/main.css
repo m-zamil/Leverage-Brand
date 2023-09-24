@@ -22,12 +22,13 @@
   font-size: clamp(1.0625rem, 0.9525rem + 0.3521vw, 1.375rem);
   margin: 1.35em 0 2em;
   margin: 26px 0 38px;
-  max-width: 40ch;
+  max-width: 38ch;
 }
 
 .hero__image {
   margin: 0 -30px;
   padding-top: 74px;
+  text-align: center;
 }
 /* ========== Clients ======= */
 .clients {
@@ -59,11 +60,11 @@
 .trust h2 {
 }
 .trust h4 {
-  margin-top: 38px;
-  margin-bottom: 0;
+  margin: 2em 0 0;
 }
 .trust p {
-  line-height: 1.5;
+  line-height: 1.67;
+  margin-top: 10px;
 }
 .trust-image {
   padding-top: 62px;
@@ -72,13 +73,13 @@
   background-color: #f8f8f8;
 }
 .trust-image img {
-  margin-left: -30px;
+  margin-left: -15px;
   margin-right: 0px;
 }
 .trust-image__title {
   font-size: 0.9375rem;
   position: absolute;
-  width: 100%;
+  width: calc(100% + 30px);
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
@@ -87,6 +88,7 @@
   background-color: white;
   box-shadow: 0 10px 15px rgba(28, 36, 43, 6%);
   border-radius: 8px;
+  text-align: center;
 }
 
 /* =========== Works ========= */
@@ -102,7 +104,7 @@
   margin-top: 66px;
 }
 .works-card {
-  max-width: 315px;
+  max-width: 292px;
   margin-top: 54px;
   margin-left: auto;
   margin-right: auto;
@@ -132,16 +134,17 @@
   background-color: var(--black);
   margin-top: 124px;
   padding: 90px 0px;
-  margin-top: 124px;
+  margin-top: 116px;
 }
 .neutral__tagline {
-  font-size: 1.375rem;
+  font-size: clamp(1.375rem, 1.243rem + 0.4225vw, 1.75rem);
+  margin-top: 0;
 }
 .neutral__text {
-  font-family: geller-headline, serif;
+  font-family: 'geller-headline', serif;
   font-size: clamp(1.5625rem, 0.7923rem + 2.4648vw, 3.75rem);
-  font-weight: 300;
-  margin: 65px 0;
+  font-weight: 500;
+  margin: 50px 0 62px;
 }
 
 /* ========== Insurance ====== */
@@ -153,7 +156,7 @@
   text-align: left;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 .insur-card {
   max-width: 315px;
@@ -282,6 +285,7 @@
   }
   .hero__text {
     margin: 24px 0 55px;
+    letter-spacing: -0.4px;
   }
   .hero__image {
     flex-basis: 45%;
@@ -293,8 +297,6 @@
     padding-top: 0;
   }
   .hero__image img {
-    max-width: 624px;
-    max-width: 708px;
     max-width: 135%;
     position: relative;
     right: -30px;
@@ -316,30 +318,33 @@
   }
   /* =========== Trust ========== */
   .trust {
-    margin-top: 44px;
+    margin-top: 50px;
   }
   .trust-wrapper {
     display: flex;
-    margin-right: -48px;
+    justify-content: space-between;
+    align-items: flex-start;
   }
   .trust-content {
-    flex-basis: 75%;
-    margin-top: 178px;
+    margin-top: 160px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
     text-align: left;
-    gap: 64px 174px;
+    justify-content: space-between;
+    flex-basis: 63%;
+    margin-left: auto;
+    margin-bottom: 76px;
   }
   .trust-content > * {
     flex-basis: 45%;
     max-width: 300px;
+    margin-bottom: 40px;
   }
   .trust h2 {
     line-height: 1.2;
   }
   .trust h4 {
-    margin-top: 0;
+    margin-top: 10px;
   }
   .trust p {
     margin-bottom: 0;
@@ -352,18 +357,20 @@
     margin-left: 0;
     margin-right: -84px;
   }
-  .trust-image__title {
+  p.trust-image__title {
     font-size: 1rem;
-    bottom: -20px;
-    margin-left: 18px;
+    bottom: -12px;
+    margin-left: 6px;
     width: max-content;
     padding-left: 30px;
     padding-right: 30px;
+    padding: 18px 40px 18px 21px;
+    line-height: 1;
   }
   /*========== Works ======== */
-  .works {
-    margin-top: 148px;
-  }
+  /* .works {
+    margin-top: 128px;
+  } */
   .works__subtitle {
     font-size: 1.4375rem;
   }
@@ -371,26 +378,26 @@
     display: flex;
     justify-content: space-evenly;
     text-align: left;
-    margin-top: 76px;
+    margin-top: 68px;
   }
   .works-card {
-    margin: 0;
+    margin: 4px;
   }
   .works-card__title {
     max-width: 14ch;
   }
   /* ========= Neutral ========  */
   .neutral {
-    padding: 165px 0 142px;
+    padding: 150px 0 142px;
+    margin-top: 156px;
   }
   .neutral__tagline {
-    font-size: 1.75rem;
     margin: 0;
   }
   .neutral__text {
     max-width: 42ch;
     margin: 75px auto;
-    line-height: 72px;
+    line-height: 1.2;
   }
   /* ========== Insurance ====== */
   .insur {
@@ -412,12 +419,13 @@
   }
   .faqs-wrapper {
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
   }
   .faqs-content {
     max-width: 636px;
     margin: 0;
+    padding-top: 190px;
   }
   .faqs__heading {
     text-align: center;
