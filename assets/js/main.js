@@ -49,3 +49,10 @@ window.onscroll = function () {
   }
   prevScrollpos = currentScrollPos;
 };
+
+// Clients slider
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 'auto',
+  freeMode: true,
+  mousewheel: true,
+});

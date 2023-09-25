@@ -1,7 +1,8 @@
 /* ========== Hero Section ========= */
 .hero {
-  background-color: #dbe3de;
+  background-color: #f8f8f8;
   overflow: hidden;
+  padding-bottom: 30px;
 }
 .hero-content {
   padding-top: 50px;
@@ -11,6 +12,7 @@
 }
 .hero__heading {
   font-size: clamp(2.375rem, 1.2526rem + 3.5915vw, 5.5625rem);
+  font-size: clamp(2.5rem, 1.8838rem + 1.9718vw, 4.25rem);
   margin-top: 14px;
   line-height: 1.2;
   letter-spacing: -0.1px;
@@ -24,14 +26,18 @@
 }
 
 .hero__image {
-  margin: 0 -30px;
-  padding-top: 74px;
+  padding-top: 60px;
   text-align: center;
+}
+.hero__cta--lg {
+  display: none;
 }
 /* ========== Clients ======= */
 .clients {
+  text-align: center;
   margin-top: 65px;
-  overflow: hidden;
+  margin: 65px -15px 0;
+  display: none;
 }
 
 .swiper {
@@ -52,7 +58,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: transparent linear-gradient(90deg, #ffffff 0%, #ffffff00 21%, #ffffff00 81%, #ffffff 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(90deg, #f8f8f8 0%, #f8f8f800 21%, #f8f8f800 81%, #f8f8f8 100%) 0% 0% no-repeat padding-box;
   z-index: 2;
   pointer-events: none;
 }
@@ -78,49 +84,158 @@
   height: 40px;
   width: auto;
 }
+/* ============ Article ========= */
+.container-sm {
+  max-width: 820px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.article {
+  /* max-width: 820px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.article-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.text-silver {
+  color: #84898e;
+}
+.bold {
+  font-weight: bold;
+}
+.underline {
+  text-decoration: underline;
+}
+.article-author {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+  margin-top: 40px;
+}
+.author-avatar {
+  margin-right: 20px;
+}
 
-/* =========== Trust ========== */
-.trust {
-  margin-top: 52px;
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-13 {
+  font-size: 13px;
+}
+.fs-12 {
+  font-size: 12px;
+}
+.flex {
+  display: flex;
+}
+.article-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 40px;
+  max-width: 375px;
+}
+.article-reviewer {
+  margin-right: 50px;
+}
+.reviewer__text {
+  margin-left: 10px;
+}
+.article-section {
+  margin-top: 50px;
+}
+.article__headline {
+  font-size: clamp(1.875rem, 1.743rem + 0.4225vw, 2.25rem);
+  line-height: 1.2;
+}
+.article p {
+  font-size: clamp(1rem, 0.7668rem + 0.7463vw, 1.125rem);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+p.article__tagline {
+  font-style: italic;
+  font-size: clamp(1.25rem, 1.0168rem + 0.7463vw, 1.375rem);
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 4px;
+}
+.article-cards {
+  margin-top: 50px;
+}
+.article-card {
+  border: 2px solid var(--black);
+  margin-bottom: 30px;
+  padding: 30px 24px;
+}
+.article-card h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.125rem;
+}
+.article-card p {
+  margin-top: 8px;
+  font-size: 1rem;
+}
+.article ol {
+  list-style-type: decimal;
+  padding-left: 16px;
+  list-style-position: outside;
+}
+.article li {
+  font-weight: bold;
+  padding-left: 15px;
+}
+.article-banner {
   text-align: center;
-}
-
-.trust h4 {
-  margin: 2em 0 0;
-}
-.trust p {
-  line-height: 1.67;
-  margin-top: 10px;
-}
-.trust-image {
-  padding-top: 62px;
-  margin-top: 62px;
-  position: relative;
+  padding: 60px;
+  margin-top: 60px;
   background-color: #f8f8f8;
 }
-.trust-image img {
-  margin-left: -15px;
-  margin-right: 0px;
+.article-banner--green {
+  background-color: #dbe3de;
 }
-.trust-image__title {
-  font-size: 0.9375rem;
-  position: absolute;
-  width: calc(100% + 30px);
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 1em 0;
-  bottom: -15px;
-  background-color: white;
-  box-shadow: 0 10px 15px rgba(28, 36, 43, 6%);
-  border-radius: 8px;
-  text-align: center;
+.article-banner h3 {
+  font-size: 1.875rem;
+}
+.article__cta {
+  padding: 12px 40px 14px;
+  margin-top: 20px;
+}
+.leading__para {
+  border: 1px solid #dce3de;
+  padding: 40px 0;
+  border-width: 1px 0;
+}
+.leading__head {
+  border: 1px solid #dce3de;
+  padding: 40px 0;
+  border-width: 1px 0;
+  font-size: 1.75rem;
+}
+.article-ulist {
+}
+.article-ulist li {
+  padding-left: 30px;
+  border-left: 1.5px solid var(--black);
 }
 
 /* =========== Works ========= */
 .works {
-  margin-top: 128px;
+  margin-top: 110px;
+  padding-top: 80px;
   text-align: center;
+  background-color: #f8f8f8;
 }
 .works__subtitle {
   margin-top: 1em;
@@ -139,7 +254,7 @@
   padding: 55px 38px;
   min-height: 363px;
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,61 +268,15 @@
   font-size: 1.125rem;
   line-height: 1.67;
 }
-/* ========= Neutral ========  */
-.neutral {
-  color: white;
-  text-align: center;
-  background-color: var(--black);
-  margin-top: 124px;
-  padding: 90px 0px;
-  margin-top: 116px;
-}
-.neutral__tagline {
-  font-size: clamp(1.375rem, 1.243rem + 0.4225vw, 1.75rem);
-  margin-top: 0;
-}
-.neutral__text {
-  font-family: 'geller-headline', serif;
-  font-size: clamp(1.5625rem, 0.7923rem + 2.4648vw, 3.75rem);
-  font-weight: 500;
-  margin: 50px 0 62px;
-}
-
-/* ========== Insurance ====== */
-.insur {
-  margin-top: 130px;
-  text-align: center;
-}
-.insur-cards {
-  text-align: left;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.insur-card {
-  max-width: 315px;
-  margin-top: 62px;
-}
-.insur-card h4 {
-  margin: 20px 0 14px;
-}
-.insur-card p {
-  margin-bottom: 19px;
-}
-.insur-card a {
-  color: #33b564;
-  text-decoration: underline;
-}
 
 /* ========== FAQs ========= */
 .faqs {
-  /* padding: 26px 0 100px; */
   margin-top: 120px;
 }
 
 .faqs__heading {
   margin-bottom: 60px;
-  text-align: center;
+  text-align: left;
 }
 
 .faqs-content {
@@ -291,18 +360,20 @@
   /* ======= Hero =======*/
   .hero-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     position: relative;
-    padding-top: 45px;
+    padding-top: 80px;
+    padding-bottom: 18px;
   }
 
   .hero-content {
-    flex-basis: 57%;
+    flex-basis: 48%;
+    max-width: 50%;
+    margin-left: 0;
+    margin-right: auto;
     flex-shrink: 0;
-    padding: 40px 0 80px;
-    padding: 103px 0 137px;
-    max-width: initial;
+    padding: 44px 0 25px;
   }
   .hero__heading {
     line-height: 1.123;
@@ -310,83 +381,43 @@
     letter-spacing: -1px;
   }
   .hero__text {
-    margin: 24px 0 55px;
+    margin: 24px 0 50px;
     letter-spacing: -0.4px;
   }
   .hero__image {
-    flex-basis: 45%;
-    flex-grow: 1;
-    width: 50%;
-    order: 1;
-    align-self: flex-end;
+    flex-basis: 40%;
     margin: 0;
     padding-top: 0;
   }
-  .hero__image img {
-    max-width: 135%;
-    position: relative;
-    right: -30px;
+  .hero__cta--lg {
+    display: inline-block;
+  }
+
+  .hero__cta--sm {
+    display: none;
   }
 
   /* ========== Clients ======= */
   .clients {
-    margin-top: 100px;
+    margin: 78px 0 0;
+    text-align: left;
+    display: block;
   }
-  .swiper-slide {
-    padding: 0 30px;
+  .clients p {
+    margin-bottom: 6px;
+  }
+  /* ============ Article ========= */
+  .article {
+    padding-top: 20px;
+  }
+  .article-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  .article-card {
+    flex-basis: 32%;
   }
 
-  /* =========== Trust ========== */
-  .trust {
-    margin-top: 50px;
-  }
-  .trust-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-  .trust-content {
-    margin-top: 160px;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: left;
-    justify-content: space-between;
-    flex-basis: 63%;
-    margin-left: auto;
-    margin-bottom: 76px;
-  }
-  .trust-content > * {
-    flex-basis: 45%;
-    max-width: 300px;
-    margin-bottom: 40px;
-  }
-  .trust h2 {
-    line-height: 1.2;
-  }
-  .trust h4 {
-    margin-top: 10px;
-  }
-  .trust p {
-    margin-bottom: 0;
-  }
-  .trust-image {
-    order: -1;
-  }
-  .trust-image img {
-    max-width: 375px;
-    margin-left: 0;
-    margin-right: -84px;
-  }
-  p.trust-image__title {
-    font-size: 1rem;
-    bottom: -12px;
-    margin-left: 6px;
-    width: max-content;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding: 18px 40px 18px 21px;
-    line-height: 1;
-  }
   /*========== Works ======== */
   /* .works {
     margin-top: 128px;
@@ -406,36 +437,10 @@
   .works-card__title {
     max-width: 14ch;
   }
-  /* ========= Neutral ========  */
-  .neutral {
-    padding: 150px 0 142px;
-    margin-top: 156px;
-  }
-  .neutral__tagline {
-    margin: 0;
-  }
-  .neutral__text {
-    max-width: 42ch;
-    margin: 75px auto;
-    line-height: 1.2;
-  }
-  /* ========== Insurance ====== */
-  .insur {
-    margin-top: 150px;
-  }
-
-  .insur-cards {
-    flex-wrap: nowrap;
-    margin-top: 24px;
-    gap: 40px;
-  }
-  .insur-card h4 {
-    font-size: 1.1875rem;
-  }
 
   /* ========== FAQs ========= */
   .faqs {
-    margin-top: 180px;
+    margin-top: 60px;
   }
   .faqs-wrapper {
     display: flex;
@@ -443,13 +448,8 @@
     justify-content: space-between;
   }
   .faqs-content {
-    max-width: 636px;
-    margin: 0;
-    padding-top: 190px;
   }
-  .faqs__heading {
-    text-align: center;
-  }
+
   .faqs-image {
     order: -1;
     margin-left: -30px;
