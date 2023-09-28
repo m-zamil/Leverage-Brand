@@ -40,6 +40,8 @@
   display: none;
 }
 
+/* --- Swiper --- */
+
 .swiper {
   margin: 0;
   margin-left: -15px;
@@ -65,20 +67,14 @@
 
 .swiper-wrapper {
   align-items: center;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 .swiper-slide {
   width: auto;
-  user-select: none;
-  padding: 0 15px;
+  padding: 0 20px;
 }
-.swiper-slide:first-child {
-  padding-left: 15px;
-}
-
-.swiper-slide:last-child {
-  padding-right: 15px;
-}
-
 .swiper-slide img {
   user-select: none;
   height: 40px;
@@ -405,6 +401,9 @@ p.article__tagline {
   }
   .clients p {
     margin-bottom: 6px;
+  }
+  .swiper {
+    margin: 0;
   }
   /* ============ Article ========= */
   .article {

@@ -10,16 +10,17 @@
   margin-right: auto;
 }
 .hero__heading {
-  font-size: clamp(2.375rem, 1.2526rem + 3.5915vw, 5.5625rem);
-  margin-top: 14px;
-  line-height: 1.2;
-  letter-spacing: -0.1px;
+  font-size: clamp(2.5rem, 1.4217rem + 3.4507vw, 5.5625rem);
+  margin-top: 10px;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
   max-width: 17ch;
 }
 .hero__text {
   font-size: clamp(1.0625rem, 0.9525rem + 0.3521vw, 1.375rem);
+  line-height: 1.47;
   margin: 1.35em 0 2em;
-  margin: 26px 0 38px;
+  margin: 26px 0 39px;
   max-width: 38ch;
 }
 
@@ -30,7 +31,7 @@
 }
 /* ========== Clients ======= */
 .clients {
-  margin-top: 65px;
+  margin-top: 40px;
   overflow: hidden;
 }
 
@@ -59,18 +60,13 @@
 
 .swiper-wrapper {
   align-items: center;
+  -webkit-transition-timing-function: linear !important;
+  -o-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
 }
 .swiper-slide {
   width: auto;
-  user-select: none;
-  padding: 0 15px;
-}
-.swiper-slide:first-child {
-  padding-left: 15px;
-}
-
-.swiper-slide:last-child {
-  padding-right: 15px;
+  padding: 0 20px;
 }
 
 .swiper-slide img {
@@ -301,7 +297,7 @@
     flex-basis: 57%;
     flex-shrink: 0;
     padding: 40px 0 80px;
-    padding: 103px 0 137px;
+    padding: 103px 0 133px;
     max-width: initial;
   }
   .hero__heading {
@@ -310,8 +306,9 @@
     letter-spacing: -1px;
   }
   .hero__text {
-    margin: 24px 0 55px;
+    margin: 27px 0 59px;
     letter-spacing: -0.4px;
+    line-height: 1.6;
   }
   .hero__image {
     flex-basis: 45%;
@@ -325,12 +322,15 @@
   .hero__image img {
     max-width: 135%;
     position: relative;
-    right: -30px;
+    right: -38px;
   }
 
   /* ========== Clients ======= */
   .clients {
-    margin-top: 100px;
+    margin-top: 104px;
+  }
+  .swiper {
+    margin: 0;
   }
   .swiper-slide {
     padding: 0 30px;
@@ -351,7 +351,7 @@
     flex-wrap: wrap;
     text-align: left;
     justify-content: space-between;
-    flex-basis: 63%;
+    flex-basis: 61%;
     margin-left: auto;
     margin-bottom: 76px;
   }
@@ -459,6 +459,9 @@
   .secure {
     margin-top: 180px;
     padding: 118px 0 125px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .secure-content {
     display: flex;

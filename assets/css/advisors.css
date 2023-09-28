@@ -7,7 +7,7 @@
   max-width: 16ch;
 }
 .hero__image {
-  margin: 0 15px;
+  margin: 0 25px;
 }
 
 .trust {
@@ -23,17 +23,17 @@
   margin-top: 76px;
 }
 .btn--white:hover {
-  background-color: #e6e6e6;
-  color: var(--black);
+  background-color: #5ed28a;
+  color: white;
 }
 @media (min-width: 768px) {
   .hero__text {
     max-width: 50ch;
   }
   .trust {
-    margin-top: 110px;
+    margin-top: 122px;
   }
-  .trust h2 {
+  .trust h3 {
     text-align: center;
   }
   .trust-image {
