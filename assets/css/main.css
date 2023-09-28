@@ -13,7 +13,6 @@
   font-size: clamp(2.5rem, 1.4217rem + 3.4507vw, 5.5625rem);
   margin-top: 10px;
   line-height: 1.25;
-  letter-spacing: -0.3px;
   max-width: 17ch;
 }
 .hero__text {
@@ -42,6 +41,7 @@
   height: auto;
   position: relative;
   padding: 16px 0;
+  pointer-events: none;
 }
 .swiper::after {
   content: '';
@@ -303,7 +303,7 @@
   .hero__heading {
     line-height: 1.123;
     margin-top: 0;
-    letter-spacing: -1px;
+    /* letter-spacing: -1px; */
   }
   .hero__text {
     margin: 27px 0 59px;
