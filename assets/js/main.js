@@ -37,15 +37,16 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-var swiper = new Swiper('.swiper', {
-  // grabCursor: true,
-  a11y: false,
-  freeMode: true,
-  speed: 4000,
-  loop: true,
-  slidesPerView: 'auto',
-  autoplay: {
-    delay: 0,
-    disableOnInteraction: false,
-  },
-});
+if (document.querySelector('.swiper')) {
+  var swiper = new Swiper('.swiper', {
+    a11y: false,
+    freeMode: true,
+    speed: 4000,
+    loop: true,
+    slidesPerView: 'auto',
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+  });
+}
