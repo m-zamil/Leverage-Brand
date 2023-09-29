@@ -189,20 +189,20 @@
   margin: 0;
   margin-top: 4px;
 }
-.article-cards {
+.article-boxes {
   margin-top: 50px;
 }
-.article-card {
+.article-box {
   border: 2px solid var(--black);
   margin-bottom: 30px;
   padding: 24px;
 }
-.article-card h4 {
+.article-box h4 {
   margin-top: 0;
   margin-bottom: 8px;
   font-size: 1.125rem;
 }
-.article-card p {
+.article-box p {
   margin: 12px 0 6px;
   font-size: 1rem;
   line-height: 1.375;
@@ -520,16 +520,16 @@ p.mt-2 {
   .article p {
     line-height: 1.67;
   }
-  .article-cards {
+  .article-boxes {
     display: flex;
     justify-content: space-between;
     gap: 22px;
   }
-  .article-card {
+  .article-box {
     margin-bottom: 0;
     flex: 1;
   }
-  .article-card p {
+  .article-box p {
     line-height: 1.4;
   }
   .article-meta {
@@ -588,7 +588,7 @@ p.mt-2 {
     margin-bottom: 0;
   }
   .birth-date-form .btn {
-    padding: 21px 42px 23px;
+    padding: 18px 42px 20px;
   }
   .birth-date__input {
     flex-basis: 45%;
