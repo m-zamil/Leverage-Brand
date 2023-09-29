@@ -21,7 +21,7 @@
   font-size: clamp(1.0625rem, 0.9525rem + 0.3521vw, 1.375rem);
   margin: 1.35em 0 2em;
   margin: 26px 0 38px;
-  max-width: 38ch;
+  max-width: 42ch;
 }
 
 .hero__image {
@@ -166,7 +166,9 @@
   line-height: 1.56;
   font-weight: 400;
   margin: 0;
+  margin-top: 26px;
 }
+
 .article h5 {
   font-size: clamp(1rem, 0.7668rem + 0.7463vw, 1.125rem);
   line-height: 1.56;
@@ -176,13 +178,15 @@
 .opt-list h5 {
   margin: 0 0 6px;
 }
+.opt-list p {
+  margin: 0;
+}
 
 .article .article__tagline {
   font-style: italic;
   font-size: clamp(1.25rem, 1.0168rem + 0.7463vw, 1.375rem);
   line-height: 1.5;
   margin: 0;
-  margin-bottom: 24px;
   margin-top: 4px;
 }
 .article-cards {
@@ -207,7 +211,7 @@
   list-style-type: decimal;
   padding-left: 16px;
   list-style-position: outside;
-  margin-top: 30px;
+  margin-top: 26px;
 }
 .opt-list--mt3 {
   margin-top: 48px;
@@ -216,7 +220,7 @@
 .article li {
   font-weight: bold;
   padding-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .article-banner {
@@ -234,7 +238,7 @@
 }
 .article__cta {
   padding: 12px 40px 14px;
-  margin-top: 16px;
+  margin-top: 20px;
 }
 .leading__para {
   border: 1px solid #dce3de;
@@ -247,10 +251,15 @@
   border-width: 1px 0;
   font-size: 1.75rem;
 }
-.article-ulist {
+.leading__head h3 {
+  font-size: 1.75rem;
+}
+.article-ulist h5 {
+  position: relative;
+  top: -0.3em;
 }
 .article-ulist li {
-  padding-left: 30px;
+  padding-left: 40px;
   border-left: 1.5px solid var(--black);
   margin-bottom: 30px;
 }
@@ -268,11 +277,11 @@
   font-size: 1.125rem;
 }
 .works-cards {
-  margin-top: 66px;
+  margin-top: 56px;
 }
 .works-card {
   max-width: 292px;
-  margin-top: 54px;
+  margin-top: 44px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -288,7 +297,7 @@
 .works-card__title {
   font-family: geller-headline, serif;
   font-size: 1.625rem;
-  margin: 25px 0 25px;
+  margin: 16px 0 16px;
 }
 .works-card p {
   font-size: 1.125rem;
@@ -320,6 +329,9 @@
 .articleby-avatar {
   margin-right: 20px;
 }
+.articleby__text {
+  font-size: clamp(0.875rem, 0.7584rem + 0.3731vw, 0.9375rem);
+}
 
 /* ========== FAQs ========= */
 .faqs {
@@ -327,7 +339,7 @@
 }
 
 .faqs__heading {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: left;
 }
 
@@ -356,7 +368,8 @@
   border: none;
   text-align: left;
   outline: none;
-  font-size: 1.35rem;
+  font-size: 1.6rem;
+  line-height: 1.2;
   font-weight: 500;
   transition: 0.4s;
   position: relative;
@@ -405,24 +418,40 @@
   padding: 0 24px;
   margin-bottom: 60px;
 }
+.birth-date-form {
+  display: flex;
+}
+.birth-date-form .btn {
+  padding: 14px 12px;
+}
+.birth-date__input {
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid var(--black);
+  font-weight: 500;
+  color: rgba(34, 36, 38, 0.5);
+  padding-left: 16px;
+  margin-right: 12px;
+}
+.birth-date__input:focus {
+  outline: none;
+}
 /* Utilities classes */
 .mt-6 {
-  margin-top: 56px;
+  margin-top: 60px;
 }
 .mt-5 {
-  margin-top: 46px;
+  margin-top: 50px;
+}
+p.mt-2 {
+  margin-top: 16px;
 }
 .mt-3 {
   margin-top: 26px;
 }
-.mb-6 {
-  margin-bottom: 56px;
-}
+
 .mb-5 {
-  margin-bottom: 46px;
-}
-.mb-3 {
-  margin-bottom: 26px;
+  margin-bottom: 50px;
 }
 
 /* ========== Responsive ========= */
@@ -557,5 +586,11 @@
   }
   .secure h2 {
     margin-bottom: 0;
+  }
+  .birth-date-form .btn {
+    padding: 21px 42px 23px;
+  }
+  .birth-date__input {
+    flex-basis: 45%;
   }
 }
