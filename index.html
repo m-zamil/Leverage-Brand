@@ -81,7 +81,7 @@
               <h1 class="hero__heading"><span class="ls-0">Th</span>e Expertise You Need. <span class="ls-0">Th</span>e Carriers You Trust.</h1>
               <p class="hero__text">Leverage is a team of expert insurance advisors that specialize in complex insurance planning.</p>
               <div>
-                <a href="#" class="btn btn--lg btn--white hero__cta">Get a Quote Now</a>
+                <a class="btn btn--lg btn--white hero__cta quoteBtn">Get a Quote Now</a>
               </div>
             </div>
             <div class="hero__image">
@@ -97,44 +97,24 @@
 
       <section class="clients">
         <div class="container">
-          <div class="swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide"><img src="./assets/images/assurity-logo.png" width="80" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/MassMutual_logo.png" width="128" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/the-standard-insurance-logo-ve@2x.png" width="65" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/Principal_Financial_Gr.png" width="106" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/Guardian_Insurance_logo.png" width="103" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/ameritas-logo.png" width="96" alt="" /></li>
+          <div class="swiper clients-logos">
+            <ul class="swiper-wrapper clients-logos-wrapper">
+              <li class="swiper-slide client__logo"><img src="./assets/images/assurity-logo.png" width="80" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/MassMutual_logo.png" width="128" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/the-standard-insurance-logo-ve@2x.png" width="65" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/Principal_Financial_Gr.png" width="106" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/Guardian_Insurance_logo.png" width="103" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/ameritas-logo.png" width="96" alt="" /></li>
               <!-- Clone -->
-              <li class="swiper-slide"><img src="./assets/images/assurity-logo.png" width="80" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/MassMutual_logo.png" width="128" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/the-standard-insurance-logo-ve@2x.png" width="65" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/Principal_Financial_Gr.png" width="106" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/Guardian_Insurance_logo.png" width="103" alt="" /></li>
-              <li class="swiper-slide"><img src="./assets/images/ameritas-logo.png" width="96" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/assurity-logo.png" width="80" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/MassMutual_logo.png" width="128" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/the-standard-insurance-logo-ve@2x.png" width="65" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/Principal_Financial_Gr.png" width="106" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/Guardian_Insurance_logo.png" width="103" alt="" /></li>
+              <li class="swiper-slide client__logo"><img src="./assets/images/ameritas-logo.png" width="96" alt="" /></li>
             </ul>
           </div>
         </div>
-        <!-- <ul class="clients__logos">
-          <li>
-            <img src="./assets/images/assurity-logo.png" width="80" alt="" />
-          </li>
-          <li>
-            <img src="./assets/images/MassMutual_logo.png" width="128" alt="" />
-          </li>
-          <li>
-            <img src="./assets/images/the-standard-insurance-logo-ve@2x.png" width="65" alt="" />
-          </li>
-          <li>
-            <img src="./assets/images/Principal_Financial_Gr.png" width="106" alt="" />
-          </li>
-          <li>
-            <img src="./assets/images/Guardian_Insurance_logo.png" width="103" alt="" />
-          </li>
-          <li>
-            <img src="./assets/images/ameritas-logo.png" width="96" alt="" />
-          </li>
-        </ul> -->
       </section>
       <section class="trust">
         <div class="container">
@@ -296,7 +276,7 @@
         <div class="container">
           <div class="secure-content">
             <h2>Securing Your Future, Simplified.</h2>
-            <a href="#" class="btn btn--green">Get a Quote Now</a>
+            <a class="btn btn--green quoteBtn">Get a Quote Now</a>
           </div>
         </div>
       </section>
@@ -405,6 +385,51 @@
         </div>
       </div>
     </footer>
+    <div class="modal" id="quoteModal">
+      <div class="modal-body">
+        <div class="modal-content">
+          <div class="quote-cards">
+            <!-- Quote card -->
+            <div class="quote-card">
+              <div class="quote-card-media">
+                <img class="quote-card__icon" src="./assets/images/disability-insurance-logo.svg" alt="" />
+              </div>
+              <h3 class="quote-card__heading">Disability Insurance</h3>
+              <p>Pays you direct monthly benefits that kick in after 30 days and last up to retirement age if you become too sick or hurt to work.</p>
+              <a href="#" class="btn btn--outline">Get My Quote</a>
+            </div>
+            <!-- Quote card -->
+            <div class="quote-card">
+              <div class="quote-card-media">
+                <img class="quote-card__icon" src="./assets/images/ltci-icon.svg" alt="" />
+              </div>
+              <h3 class="quote-card__heading">Long-Term Care Insurance</h3>
+              <p>Pays you monthly benefits if you are unable to perform multiple activities of daily living (ADL): bathing, eating, dressing, walking, and using the bathroom</p>
+              <a href="#" class="btn btn--outline">Get My Quote</a>
+            </div>
+            <!-- Quote card -->
+            <div class="quote-card">
+              <div class="quote-card-media">
+                <img class="quote-card__icon" src="./assets/images/life-insurance-icon.svg" alt="" />
+              </div>
+              <h3 class="quote-card__heading">Life Insurance</h3>
+              <p>Pays you direct monthly benefits that kick in after 30 days and last up to retirement age if you become too sick or hurt to work.</p>
+              <a href="#" class="btn btn--outline">Get My Quote</a>
+            </div>
+            <!-- Quote card -->
+            <div class="quote-card">
+              <div class="quote-card-media">
+                <img class="quote-card__icon" src="./assets/images/annuities-icon.svg" alt="" />
+              </div>
+              <h3 class="quote-card__heading">Annuities</h3>
+              <p>Pays you direct monthly benefits that kick in after 30 days and last up to retirement age if you become too sick or hurt to work.</p>
+              <a href="#" class="btn btn--outline">Get My Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>

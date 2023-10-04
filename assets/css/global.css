@@ -101,10 +101,11 @@ select {
   padding: 10px 18px;
   padding: 15px 30px 19px;
   border: 2px solid transparent;
-  transition: all 0.25s;
+  transition: all 0.2s ease-in;
   min-width: fit-content;
   white-space: nowrap;
   letter-spacing: -0.3px;
+  cursor: pointer;
 }
 
 .btn--outline {
@@ -199,7 +200,6 @@ header {
   position: sticky;
   height: 59px;
   width: 100%;
-  transition: top 0.3s;
   background-color: white;
   z-index: 2;
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.03);

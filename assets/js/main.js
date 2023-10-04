@@ -38,7 +38,7 @@ for (i = 0; i < acc.length; i++) {
 }
 
 if (document.querySelector('.swiper')) {
-  var swiper = new Swiper('.swiper', {
+  var swiper = new Swiper('.clients-logos', {
     a11y: false,
     freeMode: true,
     speed: 4000,
@@ -48,5 +48,25 @@ if (document.querySelector('.swiper')) {
       delay: 0,
       disableOnInteraction: false,
     },
+  });
+}
+
+const quoteModal = document.getElementById('quoteModal');
+
+const quoteBtns = document.querySelectorAll('.quoteBtn');
+
+if (quoteModal) {
+  quoteBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      document.body.classList.toggle('modal-open');
+      quoteModal.classList.add('visible');
+    });
+  });
+
+  quoteModal.addEventListener('click', function (e) {
+    if (!e.target.matches('.quote-card, .quote-card *')) {
+      document.body.classList.toggle('modal-open');
+      quoteModal.classList.toggle('visible');
+    }
   });
 }
