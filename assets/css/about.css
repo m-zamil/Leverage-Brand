@@ -1,0 +1,352 @@
+.medium {
+  font-weight: 500;
+}
+/* ========== Hero Section ========= */
+.hero {
+  background-color: #f8f8f8;
+  margin-bottom: 67px;
+}
+.hero-content {
+  padding-top: 50px;
+  max-width: 315px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero__heading {
+  font-size: clamp(2.5rem, 0.9375rem + 5vw, 4.6875rem);
+  margin-top: 10px;
+  line-height: 1.25;
+  max-width: 17ch;
+}
+.hero__text {
+  font-size: clamp(1.0625rem, 0.9525rem + 0.3521vw, 1.375rem);
+  line-height: 1.47;
+  margin: 1.35em 0 2em;
+  margin: 26px 0 39px;
+  max-width: 38ch;
+}
+
+.hero-image {
+  margin: 0 -30px;
+  margin-top: 60px;
+  text-align: center;
+}
+.hero__img {
+  margin-bottom: -67px;
+  max-width: 375px;
+}
+/* ========== What we do ====== */
+.wedo {
+  padding-top: 60px;
+}
+.wedo__headline {
+  font-size: clamp(2.25rem, 1.4577rem + 2.5352vw, 4.5rem);
+  background-color: var(--black);
+  color: white;
+  padding: 70px 30px 24px;
+}
+.wedo__text {
+  margin-bottom: 1.75em;
+}
+.wedo__text:first-child {
+  margin-top: 40px;
+}
+
+/* ======= Quote cards ====== */
+.quote-cards {
+  text-align: center;
+  margin-top: 80px;
+}
+.quote-card {
+  width: auto;
+  max-width: 283px;
+  background-color: white;
+  margin: 60px auto 0;
+  border-radius: 8px;
+}
+
+.quote-card__icon {
+  border-radius: 12px;
+  width: 70px;
+  height: auto;
+}
+.quote-card__heading {
+  font-size: 1.25rem;
+  margin-top: 20px;
+}
+.quote-card p {
+  margin: 15px 0 0;
+  font-size: 13px;
+  line-height: 1.77;
+}
+
+.quote-card .btn {
+  font-size: 0.875rem;
+  padding-top: 11.3px;
+  padding-bottom: 12.7px;
+  margin-top: 30px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+/* ========== Users ======== */
+.users-wrapper {
+  margin-top: 90px;
+  background-color: #dce3de;
+  padding: 40px 40px 46px;
+}
+.users-count__num {
+  font-weight: 500;
+  font-size: 4.0625rem;
+  font-family: geller-headline, serif;
+  line-height: 1.2;
+}
+.users__symbol {
+  font-size: 2.75rem;
+}
+.users__tagline {
+  font-size: clamp(1.125rem, 1.037rem + 0.2817vw, 1.375rem);
+  line-height: 1.5;
+}
+.users__text {
+  font-size: clamp(2.125rem, 1.8169rem + 0.9859vw, 3rem);
+  font-family: geller-headline, serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+/* ========= Testimonial ========== */
+.testimonial {
+  margin-top: 90px;
+}
+.testimonial__headline {
+  text-align: center;
+  line-height: 1.2;
+}
+.testm-cards {
+  margin-top: 64px;
+}
+.testm-card {
+  margin-top: 40px;
+  padding: 70px 40px 50px;
+  background-color: #f8f8f8;
+  position: relative;
+}
+.testm-card:first-child::before,
+.testm-card:last-child::after {
+  content: '';
+  width: 64px;
+  height: 44px;
+  background-image: url(../images/quote-open.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+.testm-card:first-child::before {
+  top: -14px;
+  left: 0;
+}
+.testm-card:last-child::after {
+  bottom: -14px;
+  right: 0;
+  transform: scale(-1);
+}
+.testm__title {
+  font-size: 1.25rem;
+}
+.testm__text {
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.55;
+  letter-spacing: 0.15px;
+  margin: 24px 0 30px;
+}
+.testm__cite {
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.18;
+}
+.testm__cite::before {
+  content: '— ';
+}
+/* ========== Secure ======== */
+.secure {
+  color: white;
+  background-color: var(--black);
+  text-align: center;
+  padding: 90px 0;
+  margin-top: 120px;
+}
+.secure h2 {
+  font-size: 3rem;
+  line-height: 58px;
+  font-weight: 500;
+  margin-bottom: 60px;
+}
+
+/* ========== Responsive ========= */
+
+@media (min-width: 768px) {
+  /* ======= Hero =======*/
+  .hero {
+    margin-bottom: 111px;
+  }
+  .hero-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 70px;
+  }
+
+  .hero-content {
+    flex-basis: 55%;
+    flex-shrink: 0;
+    padding: 52px 0 32px;
+    max-width: initial;
+  }
+  .hero__heading {
+    line-height: 1.05;
+    margin-top: 0;
+  }
+  .hero__text {
+    margin: 36px 0;
+    letter-spacing: -0.4px;
+    line-height: 1.6;
+  }
+  .hero-image {
+    flex-basis: 45%;
+    flex-grow: 1;
+    order: 1;
+    align-self: flex-end;
+    margin: 0;
+    padding-top: 0;
+  }
+  .hero__img {
+    margin-bottom: -111px;
+    width: 538px;
+    max-width: 100%;
+  }
+  /* ========== What we do ====== */
+  .wedo-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .wedo__headline {
+    padding: 94px 86px;
+    padding: 1.4em 1.2em;
+  }
+  .wedo-content {
+    flex-basis: 40%;
+  }
+  .wedo__text:first-child {
+    margin-top: 30px;
+  }
+
+  /* ========= Quote cards ====== */
+
+  .quote-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .quote-card {
+    padding: 0 24px;
+    margin: 70px 0 0;
+    max-width: 460px;
+
+    display: flex;
+    align-items: flex-start;
+  }
+  .quote-card-icon {
+    flex-shrink: 0;
+    margin-right: 30px;
+  }
+  .quote-card__icon {
+    width: 50px;
+  }
+  .quote-card__heading {
+    margin-top: 0;
+  }
+  .quote-card p {
+    font-size: 14px;
+  }
+  /* ========== Users ======== */
+  .users .container {
+    max-width: 1430px;
+  }
+  .users-wrapper {
+    margin-top: 160px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 132px 30px 138px;
+  }
+  .users-count {
+    flex-shrink: 0;
+    margin-top: -1.2em;
+    margin-right: 5%;
+  }
+  .users__tagline {
+    display: inline-block;
+    margin-top: 12px;
+  }
+  .users__text {
+    margin: 0;
+    max-width: 27ch;
+    margin-right: -5%;
+  }
+  /* ========= testimonial ========= */
+  .testimonial {
+    margin-top: 160px;
+  }
+  .testm-cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  .testm-card {
+    flex-basis: 40%;
+    max-width: 490px;
+    padding: 64px 106px 64px 60px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+  .testm-card:first-child::before,
+  .testm-card:last-child::after {
+    width: 75px;
+    height: 52px;
+    top: -18.2px;
+  }
+  .testm-card:first-child::before {
+    left: -18.5px;
+  }
+  .testm-card:last-child::after {
+    right: -11px;
+  }
+
+  .testm__cite {
+    margin-top: auto;
+  }
+  /* ========== Secure ======== */
+  .secure {
+    margin-top: 180px;
+    padding: 118px 0 125px;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .secure-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .secure h2 {
+    margin-bottom: 0;
+    margin-top: -0.12em;
+  }
+}
