@@ -114,6 +114,7 @@ body {
 }
 .annuity-card-title{
   display: flex;
+  justify-content: space-between;
 }
 .annuity-card-icon{
   display: inline-block;
@@ -140,6 +141,7 @@ body {
 }
 .annuities__cta{
   margin-top: 40px;
+  text-align: center;
 }
 
 /* ========== Benefits =========== */
@@ -176,6 +178,7 @@ body {
 }
 .benefit-cta{
   margin-top: 64px;
+  text-align: center;
 }
 
 /* ========== Clients ======= */
