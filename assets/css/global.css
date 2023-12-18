@@ -31,6 +31,7 @@ a {
 }
 button{
   font: inherit;
+  color: var(--black);
 }
 form,
 input {
