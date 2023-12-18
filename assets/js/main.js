@@ -37,6 +37,7 @@ if (acc) {
     });
   }
 }
+acc[0].click();
 
 if (document.querySelector('.swiper')) {
   var swiper = new Swiper('.clients-logos', {
@@ -49,6 +50,11 @@ if (document.querySelector('.swiper')) {
       delay: 0,
       disableOnInteraction: false,
     },
+  });
+  var swiper = new Swiper('.insurers-swiper', {
+    a11y: false,
+    freeMode: true,
+    slidesPerView: 'auto',
   });
 }
 

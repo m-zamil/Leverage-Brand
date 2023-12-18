@@ -9,7 +9,7 @@ body {
 }
 /* ========== Hero Section ========= */
 .hero {
-  background-color: #dbe3de;
+  background-color: #F8F8F8;
   overflow: hidden;
 }
 .hero-content {
@@ -19,24 +19,165 @@ body {
   margin-right: auto;
 }
 .hero__heading {
-  font-size: clamp(2.5rem, 1.4217rem + 3.4507vw, 5.5625rem);
+  font-size: 2.45rem;
   margin-top: 10px;
   line-height: 1.25;
   max-width: 17ch;
 }
 .hero__text {
-  font-size: clamp(1.0625rem, 0.9525rem + 0.3521vw, 1.375rem);
+  font-size: clamp(1.0625rem, 1.0185rem + 0.1408vw, 1.1875rem);
   line-height: 1.47;
   margin: 1.35em 0 2em;
   margin: 26px 0 39px;
-  max-width: 38ch;
+  max-width: 45ch;
+}
+.hero__cta{
+  padding-left: 16px;
+  padding-right: 16px;
+  min-width: 208px;
+  margin-bottom: 10px;
 }
 
 .hero__image {
   margin: 0 -30px;
-  padding-top: 74px;
+  padding-top: 60px;
   text-align: center;
 }
+.insurers p{
+  font-size: 0.875rem;
+  font-style: italic;
+  margin-top: 30px;
+  text-align: center;
+}
+.insurers-swiper{
+  margin-left: -30px;
+  padding-left: 30px;
+  margin-right: -30px;
+  padding-right: 16px;
+  margin-top: 30px;
+}
+.insurers-swiper .swiper-slide{
+  width: auto;
+  padding-right: 20px;
+}
+.insurers-swiper .swiper-slide:last-child{
+  padding-right: 0;
+}
+/* ========== Featured ======= */
+.featured{
+  margin-top: 40px;
+}
+.featured p{
+  font-size: 1rem;
+  text-align: center;
+}
+.featured-swiper{
+  margin-left: -30px;
+    padding-left: 30px;
+    margin-right: -30px;
+    padding-right: 16px;
+    margin-top: 24px;
+}
+.featured-swiper .swiper-slide{
+  width: auto;
+  padding-right: 30px;
+}
+.featured-swiper .swiper-slide:last-child{
+  padding-right: 0;
+}
+@media(min-width:700px){
+.featured-list{
+  justify-content: center;
+}
+}
+
+/* =========== Annuities ========= */
+.annuities{
+  margin-top: 70px;
+}
+.annuities h2{
+  font-size: clamp(2rem, 1.6919rem + 0.9859vw, 2.875rem);
+}
+.annuities__subtitle{
+  margin-top: 20px;
+}
+.annuity-cards{
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.annuity-card{
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  padding: 60px 40px 52px;
+}
+.annuity-card-title{
+  display: flex;
+}
+.annuity-card-icon{
+  display: inline-block;
+  margin-top: -4px;
+  flex-shrink: 0;
+}
+.annuity-card-subtitle{
+  font-style: italic;
+  margin-top: 32px;
+}
+.annuity-list{
+  list-style-type: disc;
+  padding-left: 16px;
+  border-top: 1px solid rgba(112 112 112 / 20%);
+  padding-top: 6px;
+  margin-top: 44px;
+}
+.annuity-list li{
+  margin-top: 36px;
+}
+.annuity-list p{
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.annuities__cta{
+  margin-top: 40px;
+}
+
+/* ========== Benefits =========== */
+.benefits{
+  margin-top: 80px;
+}
+.benefits__title{
+  text-align: center;
+  font-size: clamp(2rem, 1.6919rem + 0.9859vw, 2.875rem);
+  margin-right: -4px;
+  margin-left: -4px;
+}
+.benefits__subtitle{
+  margin-top: 20px;
+  text-align: center;
+}
+.benefit-cards{
+  margin-top: 54px;
+}
+.benefit-card{
+  text-align: center;
+  margin-top: 40px;
+}
+.benefit-card__title{
+  margin-top: 20px;
+  margin-bottom: 14px;
+}
+.benefit-card__text{
+  font-size: 1rem;
+  margin-top: 15px;
+}
+.benefit-image{
+  display: none;
+}
+.benefit-cta{
+  margin-top: 64px;
+}
+
 /* ========== Clients ======= */
 .clients {
   margin-top: 40px;
@@ -110,7 +251,7 @@ body {
 .trust-image__title {
   font-size: 0.9375rem;
   position: absolute;
-  width: calc(100% + 30px);
+  width: calc(100% - 30px);
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
@@ -178,9 +319,85 @@ body {
   margin: 50px 0 62px;
 }
 
+/* ========= Testimonial ========== */
+.testimonial {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  background-color: #FCFCFC;
+}
+.testimonial__headline {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.2;
+}
+.testm-swiper{
+  margin-top: 50px;
+  margin-left: -30px;
+  margin-right: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.testm-cards {
+  margin-top: 64px;
+  box-sizing: border-box;
+}
+.testm-card {
+  margin-top: 10px;
+  padding-left: 35px;
+  border-radius: 4px;
+  position: relative;
+}
+.testm-card::before {
+  content: '';
+  width: 52px;
+  height: 35px;
+  background-image: url(../images/quote-br-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+.testm-card::before {
+  top: -10px;
+  right: 0;
+}
+
+.testm-card-body{
+  position: relative;
+}
+.testm-card-body::before{
+  content: "";
+  width: 5px;
+  height: 100%;
+  background-color: #DBE3DE;
+  border-radius: 10px;
+  position: absolute;
+  left: -35px;
+}
+.testm__title {
+  font-size: 1.25rem;
+}
+.testm__text {
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.55;
+  letter-spacing: 0.15px;
+  margin: 24px 0 30px;
+}
+.testm__cite {
+  font-weight: bold;
+  letter-spacing: -0.2px;
+  font-size: 0.875rem;
+  margin: 0;
+  line-height: 1.18;
+}
+.testm__cite::before {
+  content: '— ';
+}
+
 /* ========== Insurance ====== */
 .insur {
-  margin-top: 130px;
+  margin-top: 60px;
   text-align: center;
 }
 .insur-cards {
@@ -289,6 +506,9 @@ body {
   font-weight: 500;
   margin-bottom: 60px;
 }
+.secure .btn{
+  min-width: 206px;
+}
 
 /* ===== Modal ======= */
 
@@ -374,6 +594,9 @@ body {
 
 @media (min-width: 768px) {
   /* ======= Hero =======*/
+  .hero{
+    background-color: #ECEFEC;
+  }
   .hero-wrapper {
     display: flex;
     align-items: center;
@@ -390,6 +613,7 @@ body {
     max-width: initial;
   }
   .hero__heading {
+    font-size: clamp(2.5rem, 1.4217rem + 3.4507vw, 5.5625rem);
     line-height: 1.123;
     margin-top: 0;
   }
@@ -397,6 +621,9 @@ body {
     margin: 27px 0 59px;
     letter-spacing: -0.4px;
     line-height: 1.6;
+  }
+  .hero__cta{
+    margin-right: 20px;
   }
   .hero__image {
     flex-basis: 45%;
@@ -412,7 +639,122 @@ body {
     position: relative;
     right: -38px;
   }
+  .insurers p{
+    margin-top: 40px;
+    text-align: left;
+  }
+  .insurers-swiper{
+    margin-top: 30px;
+  }
 
+  /* ========== Featured ======= */
+  .featured{
+    margin-top: 80px;
+  }
+  .featured-swiper{
+    margin-top: 35px;
+  }
+  .featured-swiper .swiper-slide{
+    padding-right: 40px;
+  }
+/* =========== Annuities ========= */
+  .annuities{
+    margin-top: 150px;
+  }
+  .annuities h2{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25ch;
+  }
+  .annuities__subtitle{
+    text-align: center;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .annuity-cards{
+    margin-top: 102px;
+    gap: 42px;
+  }
+  .annuity-card{
+    flex: 1;
+    padding: 80px 50px 62px;
+  }
+  .annuity-list li{
+    margin-top: 40px;
+  }
+  .annuity-card:last-child .annuity-card-subtitle{
+    margin-right: -12px;
+  }
+  .annuities__cta{
+    margin-top: 60px;
+    text-align: center;
+  }
+  .annuities__cta .btn{
+    min-width: 250px;
+  }
+  
+  /* ========== Benefits =========== */
+  .benefits{
+    margin-top: 150px;
+  }
+
+  .benefits__title{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25ch;
+  }
+  .benefits__subtitle{
+    text-align: center;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+  .benefit-content{
+    max-width: 450px;
+  }
+  .benefit-cards{
+    margin-top: 24px;
+  }
+  .benefit-card{
+    text-align: left;
+    display: flex;
+    gap: 30px;
+  }
+  .benefit-card:first-child{
+    margin-top: 0;
+  }
+  .benefit-card__icon{
+    flex-shrink: 0;
+  }
+  .benefit-card__title{
+    margin-top: 0;
+    line-height: 1;
+  }
+  .benefit-card__text{
+    margin-bottom: 0;
+    line-height: 1.4;
+  }
+  .benefit-image{
+    display: block;
+  }
+  .benefits-cols{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 92px;
+  }
+  .benefit-cta{
+    margin-top: 48px;
+    margin-left: 75px;
+  }
+  .benefit-cta .btn{
+    min-width: 230px;
+  }
+  
   /* ========== Clients ======= */
   .clients {
     margin-top: 104px;
@@ -460,6 +802,7 @@ body {
   }
   .trust-image {
     order: -1;
+    margin-top: 0;
   }
   .trust-image img {
     max-width: 375px;
@@ -476,27 +819,27 @@ body {
     padding: 18px 40px 18px 21px;
     line-height: 1;
   }
-  /*========== Works ======== */
+    /*========== Works ======== */
 
-  .works__subtitle {
-    font-size: 1.4375rem;
-  }
-  .works-cards {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
-    margin-top: 68px;
-  }
-  .works-card {
-    margin: 4px;
-  }
-  .works-card__title {
-    max-width: 14ch;
-  }
+    .works__subtitle {
+      font-size: 1.4375rem;
+    }
+    .works-cards {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: left;
+      margin-top: 68px;
+    }
+    .works-card {
+      margin: 4px;
+    }
+    .works-card__title {
+      max-width: 14ch;
+    }
   /* ========= Neutral ========  */
   .neutral {
     padding: 150px 0 142px;
-    margin-top: 156px;
+    margin-top: 134px;
   }
   .neutral__tagline {
     margin: 0;
@@ -506,9 +849,55 @@ body {
     margin: 75px auto;
     line-height: 1.2;
   }
+  .neutral .btn{
+    min-width: 260px;
+  }
+   /* ========= testimonial ========= */
+   .testm-wrapper{
+    align-items: flex-start;
+    justify-content: space-between;
+   }
+   .testimonial__headline{
+    margin-top: 16px;
+   }
+   .testimonial {
+    padding-top: 144px;
+    padding-bottom: 125px;
+  }
+  .testm-cards {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+  }
+  .testm-card {
+    flex-basis: 40%;
+    max-width: 490px;
+    padding-left: 35px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .testm-card::before {
+    transform: scale(-1);
+    left: -45px
+  }
+  .testm-card-body::before{
+    display: none;
+  }
+  .testm__text{
+    border-left: 5px solid #DBE3DE;
+    border-radius: 4px;
+    padding-left: 50px;
+    margin-left: -55px;
+  }
+
+  .testm__cite {
+    margin-top: auto;
+  }
   /* ========== Insurance ====== */
   .insur {
-    margin-top: 150px;
+    margin-top: 120px;
   }
 
   .insur-cards {
@@ -532,10 +921,10 @@ body {
   .faqs-content {
     max-width: 636px;
     margin: 0;
-    padding-top: 190px;
+    padding-top: 90px;
   }
   .faqs__heading {
-    text-align: center;
+    text-align: left;
   }
   .faqs-image {
     order: -1;
@@ -580,5 +969,28 @@ body {
   .quote-card__heading {
     margin-left: -9px;
     margin-right: -9px;
+  }
+}
+
+@media (min-width:1024px){
+  .testm-wrapper{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .testimonial__headline{
+    text-align: left;
+  }
+  .testm-swiper{
+    margin-top: 0;
+    padding: 0 0 0 26px;
+  }
+  .testimonial__headline{
+    max-width: 250px;
+  }
+  .testm-card{
+    max-width: 322px;
+  }
+  .testm-card:last-child{
+    margin-right: 0 !important;
   }
 }
