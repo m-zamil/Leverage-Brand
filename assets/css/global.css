@@ -29,6 +29,9 @@ select,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+button{
+  font: inherit;
+}
 form,
 input {
   font-family: inherit;
